@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://localhost:8888/Theme1/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<!-- link to the style sheet -->
+			<link rel="stylesheet" type="text/css" href="./Theme1_files/theme1.css">
+
+			<!-- Link to the google fonts -->
+			<link href="./Theme1_files/css" rel="stylesheet" type="text/css">
+
+			<link rel="stylesheet" type="text/css" href="./Theme1_files/font-awesome.min.css">
+		</head>
+		<body>
+			<!-- The header is empty, but has a purple background at the very top of the page -->
+			<header></header>
+
+			<!-- The navigation has 3 sections, LOGO - on the left, Navigation in the middle, Social Icons - on the right -->
+			<nav class="navbar">
+
+				<!-- THE LOGO -->
+				<div class="left-nav">
+					<div class="logo">
+						<div class="logo-icon">AT</div>
+						<span style="font-weight:300">Awesome</span>
+						<span style="font-weight:700">Things</span>
+						<span style="color:#16a4d6">:</span>
+					</div>
+				</div>
+
+				<!-- THE MAIN NAVIGATION -->
+				<div class="mid-nav">
+					<ul>
+						<li>
+							<a href="">Home</a>
+						</li>
+
+						<span style="color:#d3d3d3;">|</span>
+
+						<li>
+							<a href="">Folio</a>
+						</li>
+						<span style="color:#d3d3d3;">|</span>
+
+						<li>
+							<a href="">Blog</a>
+						</li>
+						<span style="color:#d3d3d3;">|</span>
+
+						<li>
+							<a href="">Features</a>
+						</li>
+						<span style="color:#d3d3d3;">|</span>
+
+						<li>
+							<a href="">Pages</a>
+						</li>
+						<span style="color:#d3d3d3;">|</span>
+
+						<li>
+							<a href="">Contact</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- THE SOCIAL ICONS -->
+				<div class="right-nav">
+					<div><i class="fa fa-facebook fa-1.5x"></i></div>
+					<div><i class="fa fa-twitter fa-1.5x"></i></div>
+					<div><i class="fa fa-google fa-1.5x"></i></div>
+					<div><i class="fa fa-linkedin fa-1.5x"></i></div>
+					<div><i class="fa fa-dribbble fa-1.5x"></i></div>
+
+				</div>
+			</nav>
+
+			<!--  -->
+			<section class="section-1">
+				
+					<div id="captioned-gallery">
+						<figure class="slider">
+							<figure>
+								<img src="./Theme1_files/hobbiton-lake.jpg" alt="">
+								<figcaption>
+									<div class="first-words">
+										<p style="font-weight:300; color:#d3d3d3;">Responsive &amp; Clean Design</p>
+										<h1 style="font-weight:700; color:#16a4d6;">ULTIMATE THEME</h1>
+										<div class="buttons">
+											<div class="left-button">About Us &nbsp; <i class="fa fa-chevron-circle-right"></i></div>
+											<div class="right-button">Purchase Theme &nbsp; <i class="fa fa-chevron-circle-right"></i></div>
+
+										</div>
+									</div>
+								</figcaption>
+							</figure>
+							<figure>
+								<img src="./Theme1_files/wanaka-drowned-tree.jpg" alt="">
+								<figcaption>Wanaka, New Zealand</figcaption>
+							</figure>
+							<figure>
+								<img src="./Theme1_files/utah-peak.jpg" alt="">
+								<figcaption>Utah, United States</figcaption>
+							</figure>
+							<figure>
+								<img src="./Theme1_files/bryce-canyon-utah.jpg" alt="">
+								<figcaption>Bryce Canyon, Utah, United States</figcaption>
+							</figure>
+							<figure>
+								<img src="./Theme1_files/hobbiton-lake.jpg" alt="">
+								<figcaption>Hobbiton, New Zealand</figcaption>
+							</figure>
+						</figure>
+					</div>
+				
+				<!-- <div class="first-word">
+					
+				</div>
+				<div class="circles">
+					<i class="fa fa-circle-o"></i><i class="fa fa-circle-o"></i><i class="fa fa-circle-o"></i>
+				</div> -->
+			</section>
+		
+		<script src="./Theme1_files/jquery-1.11.3.min.js"></script>
+		<script src="./Theme1_files/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+
+			// STICKY NAVIGATION
+	        //  http://codepen.io/anon/pen/LVLJwo
+			var  mn = $(".navbar");
+		    mns = "main-nav-scrolled";
+		    nav = 32;
+		    console.log(nav);
+
+			$(window).scroll(function() {
+			  if( $(this).scrollTop() > nav ) {
+			    mn.addClass(mns);
+			    $('nav').removeClass(mn);
+			    
+			    
+			  } else {
+			    mn.removeClass(mns);
+			    $('nav').addClass(mn);
+			    // $('.nav-end').removeClass('nav-padding');
+			  }
+			});
+		});
+		</script>
+
+	<script type="text/javascript">(function () {
+        return window.SIG_EXT = {};
+      })()</script></body></html>

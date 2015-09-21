@@ -1,0 +1,435 @@
+/* THEME 1 - BY RHONDA TE MOANANUI */
+/* Theme Colors */
+/* background color */
+/* text color */
+/* Fonts */
+/*
+font-family: 'Roboto Slab', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+/*http://codepen.io/dudleystorey/pen/ehKpi*/
+@import url(http://fonts.googleapis.com/css?family=Istok+Web);
+@-webkit-keyframes slidy {
+  0% {
+    left: 0%; }
+  20% {
+    left: 0%; }
+  25% {
+    left: -100%; }
+  45% {
+    left: -100%; }
+  50% {
+    left: -200%; }
+  70% {
+    left: -200%; }
+  75% {
+    left: -300%; }
+  95% {
+    left: -300%; }
+  100% {
+    left: -400%; } }
+@keyframes slidy {
+  0% {
+    left: 0%; }
+  20% {
+    left: 0%; }
+  25% {
+    left: -100%; }
+  45% {
+    left: -100%; }
+  50% {
+    left: -200%; }
+  70% {
+    left: -200%; }
+  75% {
+    left: -300%; }
+  95% {
+    left: -300%; }
+  100% {
+    left: -400%; } }
+/* line 36, theme1.scss */
+body, figure {
+  margin: 0;
+  background: #101010;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100; }
+
+/* line 41, theme1.scss */
+div#captioned-gallery {
+  width: 100%;
+  overflow: hidden; }
+
+/* line 44, theme1.scss */
+figure.slider {
+  position: relative;
+  width: 500%;
+  font-size: 0;
+  -webkit-animation: 30s slidy infinite;
+          animation: 30s slidy infinite; }
+
+/* line 48, theme1.scss */
+figure.slider figure {
+  width: 20%;
+  height: auto;
+  display: inline-block;
+  position: inherit; }
+
+/* line 52, theme1.scss */
+figure.slider img {
+  width: 100%;
+  height: auto; }
+
+/* line 53, theme1.scss */
+figure.slider figure figcaption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(55, 45, 59, 0.7);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  padding: .6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Roboto Slab', serif; }
+  /* line 67, theme1.scss */
+  figure.slider figure figcaption div.first-words {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 60%;
+    font-family: 'Roboto Slab', serif; }
+    /* line 74, theme1.scss */
+    figure.slider figure figcaption div.first-words p {
+      margin: 0;
+      font-size: 16pt; }
+    /* line 79, theme1.scss */
+    figure.slider figure figcaption div.first-words h1 {
+      font-size: 60pt;
+      margin-top: 0; }
+    /* line 84, theme1.scss */
+    figure.slider figure figcaption div.first-words .buttons {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      width: 100%; }
+      /* line 89, theme1.scss */
+      figure.slider figure figcaption div.first-words .buttons .left-button {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 15em;
+        padding: 1em;
+        background-color: #16a4d6;
+        color: #fff;
+        text-transform: uppercase; }
+      /* line 99, theme1.scss */
+      figure.slider figure figcaption div.first-words .buttons .right-button {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 15em;
+        padding: 1em;
+        background-color: #fff;
+        color: #404040;
+        text-transform: uppercase; }
+        /* line 108, theme1.scss */
+        figure.slider figure figcaption div.first-words .buttons .right-button i {
+          color: #16a4d6; }
+
+/* line 118, theme1.scss */
+body {
+  /*	header {
+  		height: 2em;
+  		background-color: $purple;
+  		color: $charcoal;
+  	}*/ }
+  /* line 128, theme1.scss */
+  body .navbar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    background-color: #fff;
+    font-family: 'Roboto Slab', serif;
+    position: absolute;
+    width: 100%;
+    top: 2em;
+    z-index: 10; }
+    /* line 140, theme1.scss */
+    body .navbar .left-nav {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 25%; }
+      /* line 146, theme1.scss */
+      body .navbar .left-nav .logo-icon {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 2em;
+        height: 2em;
+        background-color: #16a4d6;
+        border-radius: 50px;
+        margin: .2em; }
+      /* line 159, theme1.scss */
+      body .navbar .left-nav .logo {
+        /*padding: .5em;*/
+        font-size: 1.5em;
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+    /* line 171, theme1.scss */
+    body .navbar .mid-nav {
+      width: 50%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      /* line 176, theme1.scss */
+      body .navbar .mid-nav ul {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding-left: 0; }
+        /* line 183, theme1.scss */
+        body .navbar .mid-nav ul li {
+          margin-left: .2em;
+          margin-right: .2em;
+          list-style: none; }
+          /* line 188, theme1.scss */
+          body .navbar .mid-nav ul li a {
+            text-decoration: none;
+            padding: 1em;
+            color: #404040; }
+    /* line 197, theme1.scss */
+    body .navbar .right-nav {
+      width: 25%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      /* line 203, theme1.scss */
+      body .navbar .right-nav div {
+        background-color: #404040;
+        border-radius: 50px;
+        width: 2em;
+        height: 2em;
+        margin: .3em; }
+        /* line 210, theme1.scss */
+        body .navbar .right-nav div i {
+          color: #fff;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          height: 2em; }
+  /* line 220, theme1.scss */
+  body .main-nav-scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 99999; }
+  /* line 230, theme1.scss */
+  body .section-1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center
+    /*height: 40em;*/
+    		/*div.first-word {
+    			display: flex;
+    			flex-direction: column;
+    			justify-content: center;
+    			width: 60%;
+    			font-family: 'Roboto Slab', serif;
+    
+    			p {
+    				margin: 0;
+    				font-size: 16pt;
+    			}
+    
+    			h1 {
+    				font-size: 60pt;
+    				margin-top: 0;
+    			}
+    
+    			.buttons {
+    				display: flex;
+    				flex-direction: row;
+    				width: 100%;
+    
+    				.left-button {
+    					display: flex;
+    					justify-content: center;
+    					width: 15em;
+    					padding: 1em;
+    					background-color: $blue;
+    					color: $white;
+    					text-transform: uppercase;
+    				}
+    
+    				.right-button {
+    					display: flex;
+    					justify-content: center;
+    					width: 15em;
+    					padding: 1em;
+    					background-color: $white;
+    					color: $charcoal;
+    					text-transform: uppercase;
+    
+    					i {
+    						color: $blue;
+    					}
+    				}
+    			}
+    
+    
+    		}*/ }
+    /* line 289, theme1.scss */
+    body .section-1 .circles {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      height: 10em; }
+      /* line 297, theme1.scss */
+      body .section-1 .circles i {
+        margin: .2em;
+        color: #fff; }
+      /* line 302, theme1.scss */
+      body .section-1 .circles i:hover {
+        margin: .2em;
+        color: #16a4d6; }
+
+/*# sourceMappingURL=theme1.css.map */

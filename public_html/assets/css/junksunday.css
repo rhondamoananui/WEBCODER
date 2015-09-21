@@ -1,0 +1,553 @@
+/* line 7, junksunday.scss */
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: #B7250E;
+  color: #fff; }
+
+/*
+font-family: 'Poiret One', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Advent Pro', sans-serif;
+font-family: 'Fjalla One', sans-serif;
+*/
+/* line 21, junksunday.scss */
+* {
+  -webkit-box-sizing: content-box; }
+
+/* line 25, junksunday.scss */
+body {
+  background: url(../../assets/img/junksunday/sack.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+/* line 32, junksunday.scss */
+.logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  font-family: 'Lobster', cursive;
+  color: #CFB53B;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  padding-top: 1em; }
+  /* line 44, junksunday.scss */
+  .logo .name {
+    font-size: 4em; }
+  /* line 47, junksunday.scss */
+  .logo .address {
+    font-family: 'Poiret One', cursive;
+    font-size: 3em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+/* line 56, junksunday.scss */
+.container {
+  width: 95%;
+  min-height: 50em;
+  background-color: rgba(52, 52, 52, 0.95);
+  padding-left: 0;
+  padding-right: 0; }
+
+/* line 63, junksunday.scss */
+.content-wrap {
+  border-left: solid #343434 0.5em;
+  border-right: solid #343434 0.5em; }
+
+/* slider */
+@-webkit-keyframes slidy {
+  0% {
+    left: 0%; }
+  20% {
+    left: 0%; }
+  25% {
+    left: -100%; }
+  45% {
+    left: -100%; }
+  50% {
+    left: -200%; }
+  70% {
+    left: -200%; }
+  75% {
+    left: -300%; }
+  95% {
+    left: -300%; }
+  100% {
+    left: -400%; } }
+@keyframes slidy {
+  0% {
+    left: 0%; }
+  20% {
+    left: 0%; }
+  25% {
+    left: -100%; }
+  45% {
+    left: -100%; }
+  50% {
+    left: -200%; }
+  70% {
+    left: -200%; }
+  75% {
+    left: -300%; }
+  95% {
+    left: -300%; }
+  100% {
+    left: -400%; } }
+/* line 81, junksunday.scss */
+figure {
+  margin: 0;
+  background: #101010;
+  font-family: 'Poiret One', cursive;
+  font-weight: 100; }
+
+/* line 86, junksunday.scss */
+div#captioned-gallery {
+  width: 100%;
+  overflow: hidden; }
+
+/* line 89, junksunday.scss */
+figure.slider {
+  position: relative;
+  width: 500%;
+  font-size: 0;
+  -webkit-animation: 30s slidy infinite;
+          animation: 30s slidy infinite; }
+
+/* line 93, junksunday.scss */
+figure.slider figure {
+  width: 20%;
+  height: auto;
+  display: inline-block;
+  position: inherit; }
+
+/* line 97, junksunday.scss */
+figure.slider img {
+  width: 100%;
+  height: auto; }
+
+/* line 98, junksunday.scss */
+figure.slider figure figcaption {
+  position: absolute;
+  top: 4em;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  width: 100%;
+  font-size: 5rem;
+  padding: 5rem;
+  text-align: center; }
+
+/* navigation */
+/* line 114, junksunday.scss */
+.navbar-inverse .navbar-collapse {
+  /*width: 100%;*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: solid 5px #000000; }
+  /* line 125, junksunday.scss */
+  .navbar-inverse .navbar-collapse ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    /* line 134, junksunday.scss */
+    .navbar-inverse .navbar-collapse ul li {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      background-color: #343434;
+      border: solid 1px #000000;
+      border-radius: 1px;
+      min-width: 13em; }
+      /* line 144, junksunday.scss */
+      .navbar-inverse .navbar-collapse ul li a {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        font-size: 1.5em; }
+      /* line 151, junksunday.scss */
+      .navbar-inverse .navbar-collapse ul li a:hover {
+        color: #B7250E;
+        text-decoration: underline; }
+      /* line 155, junksunday.scss */
+      .navbar-inverse .navbar-collapse ul li a:active {
+        color: #fff;
+        background-color: #B7250E; }
+    /* line 162, junksunday.scss */
+    .navbar-inverse .navbar-collapse ul li.active {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      background-color: #B7250E;
+      border: solid 1px #000000;
+      border-bottom: 0;
+      min-width: 13em; }
+
+/* line 172, junksunday.scss */
+.navbar-inverse {
+  background-color: #222;
+  border: none;
+  border-color: none; }
+  /* line 182, junksunday.scss */
+  .navbar-inverse div .navbar-collapse .navbar-nav li.active a {
+    background-color: #B7250E; }
+
+/* line 191, junksunday.scss */
+.navbar {
+  border-radius: 0;
+  border-top: solid #B7250E 0.5em;
+  /*font-family: 'Fjalla One', sans-serif;*/
+  font-family: 'Poiret One', cursive; }
+
+/*  */
+/* home page boxes */
+/* line 205, junksunday.scss */
+.home-boxes, .gallery-boxes {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 100%;
+  margin-top: 3em;
+  margin-bottom: 3em; }
+  /* line 214, junksunday.scss */
+  .home-boxes .box, .gallery-boxes .box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 15em;
+    height: 15em;
+    border: solid #CFB53B 0.5em;
+    background-color: rgba(207, 181, 59, 0.6);
+    /*$gold;*/
+    margin-top: .5em;
+    margin-bottom: .5em; }
+    /* line 225, junksunday.scss */
+    .home-boxes .box a, .gallery-boxes .box a {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      overflow: hidden; }
+      /* line 229, junksunday.scss */
+      .home-boxes .box a img, .gallery-boxes .box a img {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        min-width: 15em;
+        min-height: 15em;
+        max-width: 20em;
+        max-height: 20em;
+        object-fit: cover;
+        overflow: auto; }
+    /* line 242, junksunday.scss */
+    .home-boxes .box h1, .gallery-boxes .box h1 {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      font-family: 'Lobster', cursive; }
+
+/* Home Content */
+/* line 252, junksunday.scss */
+.content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #fff;
+  font-size: 1.5em; }
+  /* line 261, junksunday.scss */
+  .content .home-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-color: #fff;
+    width: 80%;
+    padding: 1em; }
+    /* line 270, junksunday.scss */
+    .content .home-content h1 {
+      font-family: 'Lobster', cursive; }
+    /* line 274, junksunday.scss */
+    .content .home-content p {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+
+/* line 280, junksunday.scss */
+.home-boxes .gallery-boxes {
+  background-color: #fff; }
+
+/* Home Page - Image Ticker */
+/* line 287, junksunday.scss */
+.box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 15em;
+  height: 15em;
+  border: solid #CFB53B 0.5em;
+  background-color: rgba(207, 181, 59, 0.6);
+  /*$gold;*/
+  margin-top: .5em;
+  margin-bottom: .5em; }
+  /* line 297, junksunday.scss */
+  .box img {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 15em;
+    min-height: 15em;
+    max-width: 20em;
+    max-height: 20em;
+    object-fit: cover;
+    overflow: auto; }
+
+/* footer */
+/* line 310, junksunday.scss */
+footer {
+  height: 5em;
+  width: 100%;
+  background-color: #222;
+  border-bottom: solid #B7250E 0.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+  /* line 319, junksunday.scss */
+  footer .footer-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%; }
+    /* line 326, junksunday.scss */
+    footer .footer-nav ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      /* line 334, junksunday.scss */
+      footer .footer-nav ul li a {
+        color: #9d9d9d; }
+      /* line 337, junksunday.scss */
+      footer .footer-nav ul li a:hover {
+        color: #B7250E; }
+  /* line 343, junksunday.scss */
+  footer .copy {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    /* line 348, junksunday.scss */
+    footer .copy p {
+      margin-bottom: 0; }
+  /* line 356, junksunday.scss */
+  footer .social-icons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    /*width: 10%;*/
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 2em;
+    color: #CFB53B; }
+    /* line 365, junksunday.scss */
+    footer .social-icons i {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      margin-right: .5em; }
+
+/*.navbar-inverse .navbar-nav>.active>a {
+	background-color: $rust;
+}*/
+/* line 382, junksunday.scss */
+.headline {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.5em;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1em; }
+
+/* line 390, junksunday.scss */
+.message-form {
+  width: 100%;
+  height: 10em; }
+
+/*# sourceMappingURL=junksunday.css.map */

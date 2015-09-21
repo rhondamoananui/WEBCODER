@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://www.nzfishingclub.com/ci/resources/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>nzfishingclub</title>
+
+<script src="./nzfishingclub_files/jquery.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="./nzfishingclub_files/bootstrap.min.js"></script>
+
+<script src="./nzfishingclub_files/jquery.bxslider.min.js"></script>  
+<link href="http://nzfishingclub.com/css/jquery.bxslider.css" rel="stylesheet"> 
+<!-- <link href="" rel="stylesheet"> -->
+<link href="http://nzfishingclub.com/ci/assets/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- <link href="" rel="stylesheet"> -->
+<script src=""></script>
+<link href="http://nzfishingclub.com/ci/assets/css/resources.css" rel="stylesheet">
+
+<script>
+$( document ).ready(function() {
+  $('.bxslider').bxSlider({
+  auto: true,
+  
+  });
+
+
+  $('.dropdown-toggle').dropdown();
+
+});
+
+
+</script>
+
+
+<script type="text/javascript">
+/*window.fbAsyncInit = function() {
+    FB.init({
+    appId      : 'XXXXXXXXXXX', // replace your app id here
+    channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', 
+    status     : true, 
+    cookie     : true, 
+    xfbml      : true  
+    });
+};
+(function(d){
+    var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement('script'); js.id = id; js.async = true;
+    js.src = "//connect.facebook.net/en_US/all.js";
+    ref.parentNode.insertBefore(js, ref);
+}(document));
+ 
+function FBLogin(){
+    FB.login(function(response){
+        if(response.authResponse){
+            window.location.href = "actions.php?action=fblogin";
+        }
+    }, {scope: 'email,user_likes'});
+}*/
+</script>
+ <script>
+          //initializing API
+          /*window.fbAsyncInit = function() {
+            FB.init({appId: 'your app id', status: true, cookie: true,
+                     xfbml: true});
+          };
+          (function() {
+            var e = document.createElement('script'); e.async = true;
+            e.src = document.location.protocol +
+              '//connect.facebook.net/en_US/all.js';
+            document.getElementById('fb-root').appendChild(e);
+          }()); */
+        </script>
+
+        <!-- custom login button -->
+
+
+
+        <script>
+          //your fb login function
+         /* function fblogin() {
+            FB.login(function(response) {
+              //...
+            }, {scope:'read_stream,publish_stream,offline_access'});
+          }*/
+        </script>
+
+
+
+
+<script>
+
+
+
+
+  // // This is called with the results from from FB.getLoginStatus().
+  // function statusChangeCallback(response) {
+  //  // console.log('statusChangeCallback');
+  //  // console.log(response);
+  //   // The response object is returned with a status field that lets the
+  //   // app know the current login status of the person.
+  //   // Full docs on the response object can be found in the documentation
+  //   // for FB.getLoginStatus().
+  //   if (response.status === 'connected') {
+  //     // window.location.href ='http://nzfishingclub.com/mypage.php';
+  //     // Logged into your app and Facebook.
+  //     testAPI();
+  //   } else if (response.status === 'not_authorized') {
+  //     // The person is logged into Facebook, but not your app.
+  //     document.getElementById('status').innerHTML = 'Please log ' +
+  //       'into this app.';
+  //   } else {
+  //     // The person is not logged into Facebook, so we're not sure if
+  //     // they are logged into this app or not.
+  //     document.getElementById('status').innerHTML = 'Please log ' +
+  //       'into Facebook.';
+  //   }
+  // }
+
+  // This function is called when someone finishes with the Login
+  // Button.  See the onlogin handler attached to it in the sample
+  // code below.
+  // function checkLoginState() {
+  //   FB.getLoginStatus(function(response) {
+  //     statusChangeCallback(response);
+  //   });
+  // }
+
+  // window.fbAsyncInit = function() {
+  // FB.init({
+  //   appId      : '434305866719138',
+  //   cookie     : true,  // enable cookies to allow the server to access 
+  //                       // the session
+  //   xfbml      : true,  // parse social plugins on this page
+  //   version    : 'v2.1' // use version 2.1
+  // });
+
+  // Now that we've initialized the JavaScript SDK, we call 
+  // FB.getLoginStatus().  This function gets the state of the
+  // person visiting this page and can return one of three states to
+  // the callback you provide.  They can be:
+  //
+  // 1. Logged into your app ('connected')
+  // 2. Logged into Facebook, but not your app ('not_authorized')
+  // 3. Not logged into Facebook and can't tell if they are logged into
+  //    your app or not.
+  //
+  // These three cases are handled in the callback function.
+
+ // FB.getLoginStatus(function(response) {
+   //statusChangeCallback(response);
+  //});
+
+  // };
+
+  // // Load the SDK asynchronously
+  // (function(d, s, id) {
+  //   var js, fjs = d.getElementsByTagName(s)[0];
+  //   if (d.getElementById(id)) return;
+  //   js = d.createElement(s); js.id = id;
+  //   js.src = "//connect.facebook.net/en_US/sdk.js";
+  //   fjs.parentNode.insertBefore(js, fjs);
+  // }(document, 'script', 'facebook-jssdk'));
+
+  // // Here we run a very simple test of the Graph API after login is
+  // // successful.  See statusChangeCallback() for when this call is made.
+  // function testAPI() {
+      
+     
+  // console.log('Welcome!  Fetching your information.... ');
+
+  //   FB.api('/me', function(response) {
+  //     console.log('Successful login for: ' + response.name);
+  //     console.log('Successful login for: ' + response.email);
+  //     console.log('Successful login for: ' + response.id);
+  //     console.log('Successful login for: ' + response);
+      
+     /// sessionStorage.setItem("Slogin_user",response.name);
+     
+     
+//       $.ajax({
+//     type: 'POST',
+//     url: 'set_facebook_session.php',
+//     data: {name: response.name,email:response.email}, success: function(output) {
+        
+//      //   alert("hello");
+//                    top.location.href='http://nzfishingclub.com/mypage.php';
+//                   }
+    
+// });
+       
+       /// alert(response.name);
+    // window.location.assign('http://nzfishingclub.com/mypage.php');
+    //  document.getElementById('status').innerHTML =
+      //  'Thanks for logging in, ' + response.name + '!';
+//alert(response.name);
+  //window.location = 'http://nzfishingclub.com/mypage.php';
+//header( 'Location: mypage.php' );
+  //   });
+  // } 
+</script>
+<script>
+
+/*
+window.fbAsyncInit = function() {
+    FB.init({
+        appId   : '434305866719138',
+        oauth   : true,
+        status  : true, // check login status
+        cookie  : true, // enable cookies to allow the server to access the session
+        xfbml   : true // parse XFBML
+    });
+
+  };
+
+function fb_login(){
+    FB.login(function(response) {
+
+        if (response.authResponse) {
+            console.log('Welcome!  Fetching your information.... ');
+            //console.log(response); // dump complete info
+            access_token = response.authResponse.accessToken; //get access token
+            user_id = response.authResponse.userID; //get FB UID
+
+            FB.api('/me', function(response) {
+                user_email = response.email; //get user email
+          // you can store this data into your database             
+            });
+
+        } else {
+            //user hit cancel button
+            console.log('User cancelled login or did not fully authorize.');
+
+        }
+    }, {
+        scope: 'email,public_profile'
+    });
+}
+(function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+}());
+*/
+
+
+</script>
+<script>
+// $(document).ready(function() {
+// $( ".menu_icon" ).click(function() {
+// $( ".menu_box" ).slideToggle( "slow", function() {
+// });
+// });
+// $( ".sub_menu" ).click(function() {
+// $( ".menu_box >ul >li >ul" ).slideToggle( "slow", function() {
+
+// });
+// });
+
+// });
+</script>
+
+</head>
+
+<body>
+  <div class="overlay">    <div class="container">
+        	<header>
+                
+                <div class="row text-center">
+                    <div class="col-lg-2 logo">
+                        <img src="./nzfishingclub_files/logo.png" alt="NZ Fishing Club Logo" width="150" title="NZ Fishing Club Logo">                    </div>
+                    <div class="col-lg-8">
+                        <div class="row text-center styling">New Zealand's Online <font color="#2fb8e8">Fishing</font> Club</div>
+                        <div class="row text-center ad styling">-ADD HERE-</div>
+                        <div class="row text-center styling">Love Fishing? Join the Club!</div>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                        <div class="row text-center">
+                            <button class="btn btn-default register">REGISTER</button>
+                            <button class="btn btn-default login">LOGIN</button>
+                        </div>
+                        <h4 class="text-center">Sign in with:</h4>
+                        <div class="row text-center">
+                            <a href="http://www.nzfishingclub.com/ci/resources/#" role="button"><i class="fa fa-facebook-square fa-4x top-icons"></i></a>
+                            <a href="http://www.nzfishingclub.com/ci/resources/#" role="button"><i class="fa fa-twitter-square fa-4x top-icons"></i></a>
+                            <a href="http://www.nzfishingclub.com/ci/resources/#" role="button"><i class="fa fa-google-plus-square fa-4x top-icons"></i></a>
+                        </div>
+        
+                    </div>
+                </div>
+            </header>    
+
+<!-- 
+
+ -->
+<nav> <!-- class="nav nav-default" -->
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="nav-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- <a class="navbar-brand" href="#">Brand</a> -->
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a href="http://www.nzfishingclub.com/ci/resources/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Home <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                        <li><a href="">ABOUT US</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">CONTACT US</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">TERMS AND CONDITIONS</a></li>
+                        <li class="divider"></li>
+                    
+                </ul>
+            </li>
+                <li role="presentation"><a href="">MY PAGE</a></li>
+                
+                <li role="presentation"><a href="">ANGLERS</a></li>
+            
+                <li role="presentation"><a href="">GROUPS</a></li>
+            
+                <li role="presentation"><a href="">PHOTOS</a></li>
+            
+                <li role="presentation"><a href="">FORUM</a></li>
+            
+                <li role="presentation"><a href="">BLOG</a></li>
+            
+<!--         </ul>
+
+        <ul class="nav navbar-nav"> -->
+            <li class="dropdown">
+                <a href="http://www.nzfishingclub.com/ci/resources/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Resources <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="http://www.nzfishingclub.com/ci/resources/resources.php">BITE TIMES</a></li>
+                    <li class="divider"></li>
+                    <li><a href="http://www.nzfishingclub.com/ci/resources/tide-chart.php">TIDE CHART</a></li>
+                    <li class="divider"></li>
+                    <li><a href="http://www.nzfishingclub.com/ci/resources/moon-calendar.php">MOON CALENDAR</a></li>
+                    <li class="divider"></li>
+                    <li><a href="http://www.nzfishingclub.com/ci/resources/fishing_knots.php">FISHING KNOTS</a></li>
+                    <li class="divider"></li>
+                    <li><a href="http://www.nzfishingclub.com/ci/resources/fishingcharters.php">FISHING CHARTERS</a></li>
+                    <li class="divider"></li>
+                    <li><a href="http://www.nzfishingclub.com/ci/resources/tornaments.php">FISHING TOURNAMENTS</a></li>
+                    <li class="divider"></li>
+                    <li><a href="http://www.nzfishingclub.com/ci/resources/campgrounds.php">CAMPGROUNDS</a></li>
+                    <li class="divider"></li>
+                    
+                </ul>
+            </li>
+        </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+
+
+            <!-- 
+Image Slider section on the home page
+all slider images must be the same width and height
+-->
+
+    <div class="main_slider">
+        <div class="slider">
+    		<div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 450px;"><ul class="bxslider" style="width: 715%; position: relative; -webkit-transition-duration: 0.5s; transition-duration: 0.5s; -webkit-transform: translate3d(-7036px, 0px, 0px);"><img src="./nzfishingclub_files/slider.JPG" alt="Fishing in NZ" class="post_images bx-clone" width="100%" title="Fishing in New Zealand" rel="lightbox" style="float: left; list-style: none; position: relative; width: 1166px;">
+          		<li style="float: left; list-style: none; position: relative; width: 1166px;">
+                    <img src="./nzfishingclub_files/slider.JPG" alt="Fishing in NZ" class="post_images" width="100%" title="Fishing in New Zealand" rel="lightbox">                </li>
+                                    <img src="./nzfishingclub_files/slider.JPG" alt="Fishing in NZ" class="post_images" width="100%" title="Fishing in New Zealand" rel="lightbox" style="float: left; list-style: none; position: relative; width: 1166px;">                
+                                    <img src="./nzfishingclub_files/slider.JPG" alt="Fishing in NZ" class="post_images" width="100%" title="Fishing in New Zealand" rel="lightbox" style="float: left; list-style: none; position: relative; width: 1166px;">                
+                                    <img src="./nzfishingclub_files/slider.JPG" alt="Fishing in NZ" class="post_images" width="100%" title="Fishing in New Zealand" rel="lightbox" style="float: left; list-style: none; position: relative; width: 1166px;">                
+                                    <img src="./nzfishingclub_files/slider.JPG" alt="Fishing in NZ" class="post_images" width="100%" title="Fishing in New Zealand" rel="lightbox" style="float: left; list-style: none; position: relative; width: 1166px;">                
+	      	<li style="float: left; list-style: none; position: relative; width: 1166px;" class="bx-clone">
+                    <img src="./nzfishingclub_files/slider.JPG" alt="Fishing in NZ" class="post_images" width="100%" title="Fishing in New Zealand" rel="lightbox">                </li></ul></div><div class="bx-controls bx-has-pager bx-has-controls-direction"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link active">1</a></div><div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="" data-slide-index="2" class="bx-pager-link">3</a></div><div class="bx-pager-item"><a href="" data-slide-index="3" class="bx-pager-link">4</a></div><div class="bx-pager-item"><a href="" data-slide-index="4" class="bx-pager-link">5</a></div></div><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div></div>
+        </div>
+    </div>
+    <div class="col-lg-6"> 
+    	<p>“ give a man a fish and feed him for a day “ <br>“ teach a man to fish and feed him for a lifetime “</p> 
+		<p>either that or he sits in a boat drinking beer all day</p>
+
+		<p>New Zealand is a world class Fishing Location. Our waters are second to none when it comes to an incredible variety of fish species, including Snapper, trevally, terakihi, kingfish, kahawai, Gurnard, Blue Cod, blue moki, john dory, Hapuka and plenty more.</p>
+											
+		<p>We are also a first-class big game fishing location, as our seas are harbouring plenty of big game fish such as Marlin, sword fish, Tuna, and the Mighty Yellowtail Kingfish to name a few.</p>
+											
+		<p>And let’s not forget the superb trout and Salmon fishing in the pristine, shimmering lakes and rivers throughout our amazing country.</p>
+		<p>With over 15,000 KM’s of stunning coastline ( the 10th longest in the world) and the 4th largest fishing zone worldwide it’s no wonder over a million kiwis love to get out for a fish every year.</p>
+		<p>Let me ask you this.. </p>
+		<p>would you like to…</p>
+		<ul>
+			<li>discover all the prime tips tricks and techniques  for catching more fish</li>
+			<li>connect with other spirited fisherman, share your passion, knowledge, and expertise</li>
+			<li>Stay up to date with the latest news and fishing forum discussions</li>
+			<li>Share your stories, adventures, and photos with other anglers throughout New Zealand and the world</li>
+			<li>Gain access to all our fishing resources, bite times, knot guide, tide charts, forum etc</li>
+			<li>join or start your own group, find a new fishing buddy and form new friendships</li>
+			<li>become part of a community that is passionate about everything fishing related</li>
+			<li>And so much more…</li>
+		</ul>
+		<p>If you answered yes to any of the above then You will find a home here at NZ FISHING CLUB <br>
+		Join the ranks of enthusiastic fishermen in New Zealand today and share your love for fishing with like minded individuals. <br>
+		We look forward to seeing your pictures or videos and hearing a little about you and your adventures.</p>
+    </div>
+    
+    <div class="col-lg-6">
+    	<!-- <img src="images/con_right.png" style="max-width:100%; height:auto"> -->
+    	<img src="./nzfishingclub_files/con_right.png" alt="NZ Fishing Club" width="100%" title="NZ Fishing Club">    </div>
+
+</div> <!-- closing container div -->
+<div class="container">
+	<section class="charcoal-background">
+		<div class="row">
+		<!-- <div class="col-sm-2 col-md-2 col-lg-2"></div> -->
+		<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 ">
+						<img src="./nzfishingclub_files/c_img1.png" alt="Fishing in NZ" class="post_images" width="80%" title="Fishing in New Zealand" rel="lightbox">		</div>
+
+		<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 ">
+						<img src="./nzfishingclub_files/c_img2.png" alt="Fishing in NZ" class="post_images" width="80%" title="Fishing in New Zealand" rel="lightbox">		</div>
+
+		<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 ">
+						<img src="./nzfishingclub_files/c_img3.png" alt="Fishing in NZ" class="post_images" width="80%" title="Fishing in New Zealand" rel="lightbox">		</div>
+
+		
+
+		<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 ">
+						<img src="./nzfishingclub_files/c_img4.png" alt="Fishing in NZ" class="post_images" width="80%" title="Fishing in New Zealand" rel="lightbox">		</div>
+
+
+		<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 ">
+						<img src="./nzfishingclub_files/c_img5.png" alt="Fishing in NZ" class="post_images" width="80%" title="Fishing in New Zealand" rel="lightbox">		</div>
+
+		
+
+		<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 ">
+						<img src="./nzfishingclub_files/c_img6.png" alt="Fishing in NZ" class="post_images" width="80%" title="Fishing in New Zealand" rel="lightbox">		</div>
+
+
+		<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 ">
+						<img src="./nzfishingclub_files/c_img7.png" alt="Fishing in NZ" class="post_images" width="80%" title="Fishing in New Zealand" rel="lightbox">		</div>
+
+
+		<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 ">
+						<img src="./nzfishingclub_files/c_img8.png" alt="Fishing in NZ" class="post_images" width="80%" title="Fishing in New Zealand" rel="lightbox">		</div>
+
+		<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
+						<img src="./nzfishingclub_files/c_img9.png" alt="Fishing in NZ" class="post_images" width="80%" title="Fishing in New Zealand" rel="lightbox">		</div>
+
+		<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
+						<img src="./nzfishingclub_files/c_img10.png" alt="Fishing in NZ" class="post_images" width="80%" title="Fishing in New Zealand" rel="lightbox">		</div>
+<!-- <div class="col-sm-2 col-md-2 col-lg-2"></div> -->
+		</div>
+	</section>
+
+</div> <!-- closing container div --><div class="row">
+	<div class="container">
+		<div class="padding"></div>
+		<div class="list-group col-lg-4">
+		  <a href="http://www.nzfishingclub.com/ci/resources/#" class="list-group-item active">
+		    Recent Members
+		  </a>
+		  <a href="http://www.nzfishingclub.com/ci/resources/#" class="list-group-item">
+		  	<img src="./nzfishingclub_files/con_dimg.png" alt="NZ Fishing Club" class="avatar" width="50" height="50" title="profile photos">                <div class="members">
+                	<h5>Varz Paarman</h5>
+                	<p>Registered 5 minutes ago</p> 
+            	</div>
+		  </a>
+		  <a href="http://www.nzfishingclub.com/ci/resources/#" class="list-group-item">
+		  	<img src="./nzfishingclub_files/con_dimg.png" alt="NZ Fishing Club" class="avatar" width="50" height="50" title="profile photos">                <div class="members">
+                	<h5>Varz Paarman</h5>
+                	<p>Registered 5 minutes ago</p> 
+            	</div>
+		  </a>
+		  <a href="http://www.nzfishingclub.com/ci/resources/#" class="list-group-item">
+		  	<img src="./nzfishingclub_files/con_dimg.png" alt="NZ Fishing Club" class="avatar" width="50" height="50" title="profile photos">                <div class="members">
+                	<h5>Varz Paarman</h5>
+                	<p>Registered 5 minutes ago</p> 
+            	</div>
+		  </a>
+		  <a href="http://www.nzfishingclub.com/ci/resources/#" class="list-group-item">
+		  	<img src="./nzfishingclub_files/con_dimg.png" alt="NZ Fishing Club" class="avatar" width="50" height="50" title="profile photos">                <div class="members">
+                	<h5>Varz Paarman</h5>
+                	<p>Registered 5 minutes ago</p> 
+            	</div>
+		  </a>
+		</div>
+
+		<div class="list-group col-lg-4">
+		  <a href="http://www.nzfishingclub.com/ci/resources/#" class="list-group-item active">
+		    Recent Forum Posts
+		  </a>
+		  <a href="http://www.nzfishingclub.com/ci/resources/#" class="list-group-item">
+
+		  	<img src="./nzfishingclub_files/center1.png" alt="NZ Fishing Club" class="avatar" width="50" height="50" title="profile photos">                <div class="forums">
+                	<h5>Where Can I launch my boat.....</h5>
+                	<h6>By Shankar Paarman</h6> 
+                	<div class="forum-icons">
+                		<i class="fa fa-comment">1</i>
+                		<i class="fa fa-heart">15</i>
+
+                	</div>
+            	</div>
+		  </a>
+		  <a href="http://www.nzfishingclub.com/ci/resources/#" class="list-group-item">
+		  	<img src="./nzfishingclub_files/center1.png" alt="NZ Fishing Club" class="avatar" width="50" height="50" title="profile photos">                <div class="forums">
+                	<h5>Where Can I launch my boat.....</h5>
+                	<h6>By Shankar Paarman</h6> 
+                	<div class="forum-icons">
+                		<i class="fa fa-comment">1</i>
+                		<i class="fa fa-heart">15</i>
+
+                	</div>
+            	</div>
+            </a>
+		  <a href="http://www.nzfishingclub.com/ci/resources/#" class="list-group-item">
+	<img src="./nzfishingclub_files/center1.png" alt="NZ Fishing Club" class="avatar" width="50" height="50" title="profile photos">                <div class="forums">
+                	<h5>Where Can I launch my boat.....</h5>
+                	<h6>By Shankar Paarman</h6> 
+                	<div class="forum-icons">
+                		<i class="fa fa-comment">1</i>
+                		<i class="fa fa-heart">15</i>
+
+                	</div>
+            	</div>
+		  </a>
+		  <a href="http://www.nzfishingclub.com/ci/resources/#" class="list-group-item">
+	<img src="./nzfishingclub_files/center1.png" alt="NZ Fishing Club" class="avatar" width="50" height="50" title="profile photos">                <div class="forums">
+                	<h5>Where Can I launch my boat.....</h5>
+                	<h6>By Shankar Paarman</h6> 
+                	<div class="forum-icons">
+                		<i class="fa fa-comment">1</i>
+                		<i class="fa fa-heart">15</i>
+
+                	</div>
+            	</div>
+		  </a>
+		</div>
+
+		<div class="list-group col-lg-4">
+		  <a href="http://www.nzfishingclub.com/ci/resources/#" class="list-group-item active">
+		    Recent Blog Posts
+		  </a>
+		  <a href="http://www.nzfishingclub.com/ci/resources/#" class="list-group-item">Dapibus ac facilisis in</a>
+		  <a href="http://www.nzfishingclub.com/ci/resources/#" class="list-group-item">Morbi leo risus</a>
+		  <a href="http://www.nzfishingclub.com/ci/resources/#" class="list-group-item">Porta ac consectetur ac</a>
+		  <a href="http://www.nzfishingclub.com/ci/resources/#" class="list-group-item">Vestibulum at eros</a>
+		</div>
+
+        <div class="footer-div"></div>
+    
+
+    </div> <!-- closing container div for  groups.php -->
+</div> <!-- closing row div for  groups.php -->
+
+</div> <!-- end overlay div -->
+<footer> 
+    <div class="container background">
+    <ul class="nav-justified">
+     	<li><a href="http://nzfishingclub.com/index.php">HOME</a></li>
+        <li><a href="http://nzfishingclub.com/mypage.php">MY PAGE</a></li>
+        <li><a href="http://nzfishingclub.com/anglers.html">ANGLERS</a></li>
+        <li><a href="http://nzfishingclub.com/groups.html">GROUPS</a></li>
+        <li><a href="http://nzfishingclub.com/photos.php">PHOTOS</a></li>
+        <li><a href="http://nzfishingclub.com/forum.html">FORUM</a></li>
+        <li><a href="http://nzfishingclub.com/blogs.html">BLOG</a></li>
+        <li><a href="http://nzfishingclub.com/resources.html">RESOURCES</a></li>
+<!--         <li><a href="#">TACKLE SHOP</a></li>
+        <li><a href="#">GENERAL</a></li> -->
+    </ul>
+         
+    <div class="row text-center padding">
+        <i class="fa fa-facebook-square fa-3x fa-footer"></i>
+        <i class="fa fa-twitter-square fa-3x fa-footer"></i>
+        <i class="fa fa-google-plus-square fa-3x fa-footer"></i>
+        <i class="fa fa-youtube-square fa-3x fa-footer"></i>
+        <i class="fa fa-envelope-square fa-3x fa-footer"></i>
+    </div>
+
+    <div class="row text-center padding">
+        <div class="copyright">Copyright © 2014 NZ Fishing Club<br>  Designed by Webcoder.co.nz</div>
+    </div>
+   </div>
+</footer>
+
+
+
+
+
+
+	</body></html>

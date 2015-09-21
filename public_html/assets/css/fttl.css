@@ -1,0 +1,318 @@
+/* line 1, fttl.scss */
+.bg-img {
+  background: url("../../assets/img/fttl/home-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 580px; }
+
+/* line 10, fttl.scss */
+h1 {
+  text-align: center; }
+
+/* line 14, fttl.scss */
+.banner {
+  width: 100%;
+  max-height: 450px; }
+
+/* line 18, fttl.scss */
+.center {
+  text-align: center; }
+
+/* line 21, fttl.scss */
+.gallery-img {
+  width: 100%;
+  max-height: 450px; }
+
+/*################## HOME PAGE ##############################*/
+/*################## NAVIGATION ##############################*/
+/* line 32, fttl.scss */
+.top-nav {
+  border-radius: 0;
+  border: none;
+  margin-bottom: 0; }
+
+/* line 38, fttl.scss */
+.navbar {
+  margin-bottom: 0; }
+
+/* line 41, fttl.scss */
+.navbar-brand {
+  padding: 0; }
+
+@media (max-width: 768px) {
+  /* line 46, fttl.scss */
+  .nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    /* line 49, fttl.scss */
+    .nav div {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      /* line 53, fttl.scss */
+      .nav div ul.navbar-nav {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+/*################## FOOTER ##############################*/
+/* line 66, fttl.scss */
+.row footer i {
+  font-size: 1.5em;
+  text-align: center; }
+
+/* line 70, fttl.scss */
+.row footer .row, ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+/* line 75, fttl.scss */
+footer {
+  /*	display: flex;
+  	flex-direction: column;
+  	justify-content: center;*/
+  position: fixed;
+  bottom: 0;
+  left: 0; }
+
+/*################## PILOT & AIRCRAFT PAGES ##############################*/
+/* line 88, fttl.scss */
+.thumbnail > img {
+  height: 20em;
+  overflow: hidden; }
+
+/* line 93, fttl.scss */
+.aircrafts, .pilots {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  /* line 97, fttl.scss */
+  .aircrafts .push, .pilots .push {
+    height: 2em; }
+
+/*################## ADVENTURE PAGES ##############################*/
+/* line 104, fttl.scss */
+.planes {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  /*align-items: flex-start;*/
+  -webkit-box-align: flex-stretch;
+  -webkit-align-items: flex-stretch;
+      -ms-flex-align: flex-stretch;
+          align-items: flex-stretch;
+  height: auto; }
+
+/* line 114, fttl.scss */
+.left-side {
+  padding: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: whitesmoke;
+  width: 100%; }
+  /* line 121, fttl.scss */
+  .left-side .post_images {
+    width: 100%;
+    height: auto; }
+  /* line 126, fttl.scss */
+  .left-side .glider-content {
+    width: 80%;
+    margin: 0 auto; }
+
+/* line 134, fttl.scss */
+.right-side {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  margin-left: 1.5em; }
+
+/* line 140, fttl.scss */
+.calculator {
+  position: fixed;
+  background-color: #ff6600;
+  padding: 1em;
+  min-height: 25.6em;
+  top: 4.5em;
+  right: 1em;
+  border: solid; }
+  /* line 149, fttl.scss */
+  .calculator fieldset {
+    width: 20em; }
+
+/*################################# ALL PAGES WITH RIGHT SIDE BOOKING #######################################*/
+/* line 159, fttl.scss */
+.hide {
+  display: none; }
+
+/*################## BOOKING FORM ##############################*/
+/* line 166, fttl.scss */
+section.right-section fieldset input.btn {
+  display: block;
+  margin: 2em auto; }
+
+/* line 170, fttl.scss */
+.comment {
+  width: 100%;
+  height: 20em;
+  padding: .025em; }
+
+/*################## form validation ##############################*/
+/* line 177, fttl.scss */
+.success {
+  color: green; }
+
+/* line 180, fttl.scss */
+.fail {
+  color: red; }
+
+/* line 185, fttl.scss */
+.thumbnail {
+  display: block;
+  /* padding: 4px; */
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 0;
+  border-radius: 4px; }
+
+/* line 196, fttl.scss */
+.thumbnail:hover {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #ff6600;
+  /*border: 7px solid #ff6600;*/
+  border-radius: 4px; }
+
+/* navigation */
+/* line 208, fttl.scss */
+.navbar-nav {
+  font-size: 1.5em; }
+
+/* line 212, fttl.scss */
+.navbar-nav > li > a:hover, .fa:hover, .fa:focus {
+  color: #ff6600; }
+
+/* line 217, fttl.scss */
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  /*font-size: 1.5em;*/
+  background-color: #ff6600; }
+
+/* center the homepage logo */
+/* line 226, fttl.scss */
+.bg-img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  /* line 229, fttl.scss */
+  .bg-img div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    align-item: center; }
+    /* line 234, fttl.scss */
+    .bg-img div .logo-container {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      /* line 240, fttl.scss */
+      .bg-img div .logo-container .logo {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 50em; }
+
+/* for the booking form  */
+/* line 250, fttl.scss */
+.hide {
+  display: none; }
+
+/* line 254, fttl.scss */
+.show {
+  display: none; }
+
+@media (max-width: 768px) {
+  /* line 263, fttl.scss */
+  .bg-img div .logo-container a .logo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; } }
+/* line 273, fttl.scss */
+.quantity {
+  padding-left: 1em;
+  padding-right: 1em; }
+
+/* line 277, fttl.scss */
+fieldset {
+  padding: .5em; }
+
+/*# sourceMappingURL=fttl.css.map */
